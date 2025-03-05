@@ -42,7 +42,7 @@ class WeatherData:
         """Gets gridpoint data from weather.gov"""
         print("getting gridpoint data")
 
-        url = 'https://api.weather.gov/points/41.0793,-85.1394'
+        url = 'https://api.weather.gov/points/41.0793,-85.1394' # the example city
         response = requests.get(url)
         if response.status_code == 200:
             data = response.json()
